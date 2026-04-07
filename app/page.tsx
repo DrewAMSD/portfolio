@@ -1,11 +1,18 @@
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/sections/Hero";
+import About from "@/components/sections/About";
+import Projects from "@/components/sections/Projects";
+import Contact from "@/components/sections/Contact";
+
 export default function Home() {
   return (
     <main className="bg-background flex flex-col items-center w-full min-h-screen">
-        <div className="flex flex-col items-center justify-center w-100 h-100 bg-surface border-1 border-border">
-          <h1 className="text-foreground">Header</h1>
-          <p className="text-foreground">text</p>
-          <p className="text-foreground-muted">subtext</p>
-        </div>
+        <Navbar />
+        
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
     </main>
   );
 }
